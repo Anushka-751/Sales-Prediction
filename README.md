@@ -1,69 +1,81 @@
 # 📊 Sales Prediction Using Machine Learning
 
-✅ **3 out of 3 projects successfully completed under the Oasis Infobyte Data Science Internship**.
+✅ **3 out of 3 projects successfully completed under the Oasis Infobyte Data Science Internship.**
 
-This project predicts product sales based on advertising spend across **TV**, **Radio**, and **Newspaper** using a **Linear Regression model**. It includes a **Streamlit web app** for real-time, interactive predictions. The goal is to understand how different advertising budgets affect sales and to build a model that can forecast sales accurately.
+This project predicts product sales based on advertising spend across **TV**, **Radio**, and **Newspaper** using a **Linear Regression model**. It includes a **Streamlit web app** for real-time, interactive predictions. The model is trained using the popular ISLR Advertising dataset.
 
 ---
 
 ## 📁 Folder Structure
 
+```
 sales_prediction/
-├── dataset.csv # Advertising dataset
-├── model_training.py # Python script to train and save the ML model
-├── sales_model.pkl # Trained and saved model (generated after training)
-├── app.py # Streamlit app for live sales prediction
-└── requirements.txt # Project dependencies
-
-yaml
-Copy code
+├── dataset.csv           # Advertising dataset
+├── model_training.py     # Python script to train and save the ML model
+├── sales_model.pkl       # Trained and saved model (generated after training)
+├── app.py                # Streamlit app for live sales prediction
+└── requirements.txt      # Project dependencies
+```
 
 ---
 
 ## 🚀 Features
 
 - ✅ Trains a regression model using real-world advertising data
-- 📊 Visualizes data relationships and model performance
-- 🤖 Uses Linear Regression to forecast sales
-- 🌐 Deploys a Streamlit app for user-friendly prediction
-- 💾 Saves the trained model using `pickle` for reuse
+- 📊 Visualizes feature relationships and model performance
+- 🤖 Predicts product sales using Linear Regression
+- 🌐 Streamlit-based interactive prediction interface
+- 💾 Model saved and reused with `pickle`
 
 ---
 
 ## 🛠️ Technologies Used
 
 - **Python 3**
-- **Pandas**, **NumPy** – Data handling
+- **Pandas**, **NumPy** – Data manipulation
 - **Matplotlib**, **Seaborn** – Data visualization
-- **Scikit-learn** – Machine Learning (Linear Regression)
-- **Streamlit** – Web-based UI for predictions
+- **Scikit-learn** – Machine learning
+- **Streamlit** – Web interface
 
 ---
 
 ## ⚙️ How to Run the Project
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/Anushka-751/sales-prediction.git
 cd sales-prediction
 ```
-2. Install Dependencies
+
+### 2. Install Required Packages
+
 ```bash
 pip install -r requirements.txt
 ```
-4. Train the Model
-```bash
 
+### 3. Train the Machine Learning Model
+
+```bash
 python model_training.py
-This command trains the Linear Regression model and saves it as sales_model.pkl.
 ```
-5. Launch the Streamlit Web App
+
+This command trains the Linear Regression model and saves it as `sales_model.pkl`.
+
+### 4. Run the Streamlit App
+
 ```bash
 streamlit run app.py
 ```
-📂 Dataset Information
-Feature	Description
-TV	Advertising spend on TV (in $)
-Radio	Advertising spend on Radio (in $)
-Newspaper	Advertising spend on Newspaper (in $)
-Sales	Product sales (target variable)
+
+---
+
+## 📂 Dataset Description
+
+| Feature     | Description                               |
+|-------------|-------------------------------------------|
+| TV          | Advertising budget for TV (in thousands)  |
+| Radio       | Advertising budget for Radio (in thousands) |
+| Newspaper   | Advertising budget for Newspaper (in thousands) |
+| Sales       | Actual product sales (target variable)    |
+
