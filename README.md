@@ -1,66 +1,82 @@
-📊 Sales Prediction Using Machine Learning
-This project predicts sales based on advertising spend across TV, Radio, and Newspaper using a linear regression model. A user-friendly Streamlit interface is also included for real-time predictions.
+# 📊 Sales Prediction Using Machine Learning
 
-📁 Folder Structure
-bash
-Copy code
+This project predicts product sales based on advertising spend across **TV**, **Radio**, and **Newspaper** channels using a **Linear Regression model**. It includes a **Streamlit web app** for user-friendly real-time predictions.
+
+---
+
+## 📁 Folder Structure
+
 sales_prediction/
-├── dataset.csv
-├── model_training.py     # Trains and saves model as sales_model.pkl
-├── sales_model.pkl       # Trained ML model (auto-generated)
-├── app.py                # Streamlit UI to predict sales
-└── requirements.txt      # Dependencies
+├── dataset.csv # Advertising dataset
+├── model_training.py # Trains and saves the ML model
+├── sales_model.pkl # Saved trained model (generated after training)
+├── app.py # Streamlit UI for prediction
+└── requirements.txt # Python dependencies
 
-🚀 Features
-📉 Trains a regression model using real-world advertising data
-📊 Visualizes data and model performance
-✅ Predicts sales from advertising inputs via a Streamlit web app
-💾 Saves the model as a .pkl file for future use
+yaml
+Copy code
 
+---
 
-📦 Requirements
-Install all dependencies using:
+## 🚀 Features
+
+- 📈 Trains a regression model on historical advertising data
+- 🧠 Uses Linear Regression to model the relationship between ad spend and sales
+- 📊 Displays performance metrics (R² score, MSE) and visualizations
+- 🌐 Streamlit app for real-time prediction with user inputs
+- 💾 Model persistence using `pickle`
+
+---
+
+## 🛠️ Technologies Used
+
+- **Python 3**
+- **Pandas, NumPy** – Data handling
+- **Matplotlib, Seaborn** – Data visualization
+- **Scikit-learn** – Machine learning
+- **Streamlit** – Web app interface
+
+---
+
+## ⚙️ How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Anushka-751/sales-prediction.git
+cd sales-prediction
+2. Install Dependencies
 bash
 Copy code
 pip install -r requirements.txt
-
-🛠 Technologies Used
-Python
-Pandas, NumPy
-Matplotlib, Seaborn
-Scikit-learn
-Streamlit
-
-⚙️ How to Run
-1. Train the Model
+3. Train the Model
 bash
 Copy code
 python model_training.py
-This generates sales_model.pkl.
+This will train the Linear Regression model and save it as sales_model.pkl.
 
-2. Launch the Streamlit App
+4. Launch the Streamlit App
 bash
 Copy code
 streamlit run app.py
-📸 UI Demo
-Add a screenshot of your Streamlit app here once ready.
+📷 Demo Screenshot
+(Insert a screenshot of your Streamlit app here)
 
-📚 Dataset
-The dataset used contains advertising spend and corresponding sales values across various channels:
-TV
-Radio
-Newspaper
-Sales (target)
+📂 Dataset Info
+Feature	Description
+TV	Advertising spend on TV (in $)
+Radio	Advertising spend on Radio (in $)
+Newspaper	Advertising spend on Newspaper (in $)
+Sales	Sales figures (target variable)
 
-Dataset source: Advertising Data from ISLR
+📌 Source: ISLR Advertising Dataset
 
-✅ Outcomes
-Achieved high R² score using Linear Regression
-Successfully deployed a no-code web app for dynamic sales prediction
-
-🙋‍♀️ Developed By
+✍️ Author
 Anushka A Poojary
-🎓 B.E. Computer Science | Full Stack + ML Enthusiast
-🔗 LinkedIn
+🎓 B.E. Computer Science Engineering
+🌐 LinkedIn
 💻 GitHub
+
+📌 License
+This project is licensed under the MIT License.
 
