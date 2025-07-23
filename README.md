@@ -70,12 +70,3 @@ Sales	Sales figures (target variable)
 
 📌 Source: ISLR Advertising Dataset
 
-✍️ Author
-Anushka A Poojary
-🎓 B.E. Computer Science Engineering
-🌐 LinkedIn
-💻 GitHub
-
-📌 License
-This project is licensed under the MIT License.
-
