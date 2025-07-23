@@ -45,22 +45,21 @@ Copy code
 ```bash
 git clone https://github.com/Anushka-751/sales-prediction.git
 cd sales-prediction
+```
 2. Install Dependencies
-bash
-Copy code
+```bash
 pip install -r requirements.txt
+```
 3. Train the Model
-bash
-Copy code
+```bash
 python model_training.py
+```
 This will train the Linear Regression model and save it as sales_model.pkl.
 
 4. Launch the Streamlit App
-bash
-Copy code
+```bash
 streamlit run app.py
-📷 Demo Screenshot
-(Insert a screenshot of your Streamlit app here)
+
 
 📂 Dataset Info
 Feature	Description
