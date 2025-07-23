@@ -59,7 +59,7 @@ This will train the Linear Regression model and save it as sales_model.pkl.
 4. Launch the Streamlit App
 ```bash
 streamlit run app.py
-
+```
 
 📂 Dataset Info
 Feature	Description
